@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  /* header section*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 15px;
+  }
+  .icons_right{
+    display: flex;
+  }
+main {
+    height: calc(100vh - 70px);
+    display: flex;
+    background-color: #f9f9f9;
+  }
+/* Sidebar */ 
+.side-bar {
+    height: 100%;
+    width: 17%;
+    background-color: white;
+    overflow-y: hidden;
+  } 
+ 
+  
+  .left {
+    display: flex;
+    align-items: center;
+   }
+  .menu{
+    height: 40px;
+    margin-top: 12px;
+  }
+  .men{
+    width: 80px;
+    height: 30px;
+    margin-top: 10PX;
+  }
+   .search {
+    display: flex;
+   }
+   
+   .search form {
+    display: flex;
+    border: 1px solid #ddd;
+    height: 30px;
+    margin-top: 15px;
+   }
+   .search input {
+    width: 600px;
+    padding:10px;
+    border: 0;
+    height: 100%;
+    border-radius: 2px 0 0 2px
+    
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid #ddd;
+  }
+  .search button {
+    height: 100%;
+    width: 60px;
+    border: none;
+  }
+   
+  #mic {
+    margin-top: 10px;
+    width: 50px;
+    height: 40px;
+    border-radius: 400px;
+
+  }
+  #sig{
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+  }
+  #dots{
+    margin-top: 11px;
+  }
+  
+  .material-icons {
+    color: rgb(100, 100, 100);
+    padding: 0 7px;
+    cursor: pointer;
+  }
+  .icons{
+    width: 30px;
+  }
+  .nav .nav-link span{
+    color: black;
+    margin-left: 15px;
+  }
+  .nav p{
+    margin-left: 20px;
+    font-size: small;
+   }
+  #sign{
+    width: 80px;
+    height: 30px;
+    margin-left: 18px;
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 3px 10px;
+  }
+  
+  
+ .nav-link:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+  }
+ 
+ .active {
+    background: #e5e5e5;
+ }
+   
+ hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+  }
+  .content {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    padding: 5px 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+  }
+#links a{
+        text-decoration: none;
+        background-color: rgb(242, 242, 242);
+        color: black;
+        padding: 4px 6px 4px 6px;
+        align-content: space-around;
+        border-radius: 12px;
+        font-size: 15px;
+    }
+  
+  .top, .bot{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    overflow-x: hidden;
+    
+    gap: 1px;
+    column-gap: 2px;
+    width: calc(100% - 20px);
+
+  }
+  
+  .video {
+    width: 300px;
+    height: 260px;
+    
+    object-fit: cover;
+  }
+  .thumbnail {
+    width: 90%;
+    height: 60%;
+  }
+  
+  .thumbnail img {
+    object-fit: contain;
+    height: 94%;
+    width: 100%;
+  }
+  .author img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+  .details {
+    display: flex;
+  }
+   
+  .title {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .title h3 {
+    color: rgb(3, 3, 3);
+    line-height: 18px;
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+   
+  .title a,
+  span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+  }
+  #live{
+    width: 50px;
+    height: 20px;
+  }
+  
+  #like{
+    width: 30px;
+    height: 25px;
+  }
+  
+@media screen and (min-width: 320px) and (max-width: 430px) {
+  .header .left .menu{
+    display: none;
+  }
+  .header form input{
+    display: none;
+  }
+  .header form{padding-left: 0%;} 
+  form button{
+    align-items: right;
+    padding-right: 100%;
+    background-color: white;
+  }
+  .header #mic{
+    display: none;
+  }
+  .header .icons_right #dots{
+    display: none;
+  }
+  .header .icons_right #sig{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  main .side-bar {
+    align-items: baseline;
+    display: none;
+    list-style: none;
+    position:absolute;
+    bottom: 10;
+    width: 100%;
+  }
+  #a, #e, #f, #g, #h, #i, #j, #k, .e{
+    display: none;
+  }
+  .content #links{
+    display: flex;
+    width: 1000px;
+    height: 25px;
+    margin-top: 10px;
+  }
+  .content .videos .v-container .top , .bot{
+    display: flex;
+    padding-left: 15%;
+    flex-direction: column;
+    column-gap: 1px;
+  
+  }
+  .content .videos .vcontainer .video{
+    width: 300%;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+  .content .videos .v-container .video .thumbnail{
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 10px;
+    
+
+  }
+
+}
+@media screen and (min-width: 500px) and (max-width: 1115px){
+  .header .left .menu{
+    display: none;
+  }
+  .header form input{
+    display: none;
+  }
+  .header form, form button{
+    background-color: white;
+  }
+  .header #mic{
+    display: none;
+  }
+  .header .icons_right #dots{
+    display: none;
+  }
+  .header .icons_right #sig{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  main .side-bar{
+    display: none;
+    /* list-style: none;
+    display: flex;
+    position:absolute;
+    bottom: 0;
+    width: 100%; */
+  }
+  .content #links{
+    display: flex;
+    width: 1000px;
+    height: 25px;
+    margin-top: 10px;
+  }
+  .content .videos .v-container{
+    display: flex;
+    flex-direction: row;
+    row-gap: 0px;
+    column-gap: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+
+  
+  }
+  .top , .bot{
+    display: flex;
+    flex-direction: column;
+    column-gap: 1px;
+    
+  
+  }
+  .content .videos .vcontainer .video{
+    width: 300px;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+  .content .videos .v-container .video .thumbnail{
+    width: 300px;
+    padding-left: 0px;
+    padding-right: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+
+  }
+
+}
